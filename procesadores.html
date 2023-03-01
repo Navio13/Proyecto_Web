@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace para importar bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Enlace a archivo css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace para importar fuente de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+    <title>Procesadores</title>
+</head>
+
+<body>
+    <!-- El header es un menú importado íntegramente de bootstrap. Se han añadido los enlaces y modificado algunos botones -->
+    <!-- Este menú se repetirá en todas las páginas -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo"
+                        src="img/Initial_Letter_PC_Logo_or_Icon_Design_Vector_Image_Template3-removebg-preview.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ordenadores.html">Ordenadores</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Componentes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" aria-current="page" href="#">Procesadores</a></li>
+                                <li><a class="dropdown-item" href="placas.html">Placas base</a></li>
+                                <li><a class="dropdown-item" href="graficas.html">Gráficas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled" href="#">Proximamente...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <!-- Este botón esta desactivado -->
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Carrito no disponible</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- La estructura de las cuatro páginas de productos es la misma: un grid hecho a mano -->
+    <div class="titulo">
+        <h1>Procesadores</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum eu molestie. Mauris tellus
+            dui,
+            viverra quis tortor in, cursus gravida tellus. In bibendum dignissim nunc, ac venenatis augue iaculis sit
+            amet.
+            Duis tempor convallis odio, in efficitur est accumsan in. Nullam neque dolor, vestibulum eget magna at,
+            posuere
+            rutrum ante. Nullam tortor dui, aliquam id sapien ut, congue molestie eros. Interdum et malesuada fames ac
+            ante
+            ipsum primis in faucibus.</p>
+    </div>
+    <div class="p-container">
+        <!-- La idea sería que la parte izquierda estuviese ocupada por un filtro de búsquedad, el cual aún no se realizar -->
+        <div class="filtro">
+            <p>En esta parte izquierda habría un filtro de búsqueda para cada una de las diferentes secciones, no
+                obstante nos encontramos con este texto ya que en estos momentos el filtro no es posible de llevar a
+                cabo.</p>
+        </div>
+        <!-- Cada producto contiene una imagen, una descripción y un botón de compra (el cual no funciona) -->
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador1.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador2.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador3.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador4.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador5.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador6.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador7.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador8.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+        <div class="contenido">
+            <div>
+                <img src="img/procesadores/procesador9.webp" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum.</p>
+                <button title="No disponible :("><img src="img/carrito.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer hecho a mano, con "información legal" y enlaces a redes sociales -->
+    <footer class="footer">
+        <div class="info">
+            <h5>Alfonso Navío Castellano</h5>
+            <p>© 2023 Todos los derechos reservados</p>
+        </div>
+        <div class="media">
+            <a href="https://www.instagram.com/navio13/" target="_blank"><img src="img/media/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/alfonso.naviocastellano" target="_blank"><img src="img/media/facebook.png"
+                    alt=""></a>
+            <a href="https://twitter.com/Navio13" target="_blank"><img src="img/media/gorjeo.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/alfonso-navio-617a3b1b1/" target="_blank"><img
+                    src="img/media/linkedin.png" alt=""></a>
+        </div>
+        <div class="legal">
+            <p>AVISO LEGAL</p>
+            <p>POLÍTICA DE PRIVACIDAD</p>
+        </div>
+        <div class="legal">
+            <p>SOPORTE</p>
+            <p>TRABAJA CON NOSOTROS</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

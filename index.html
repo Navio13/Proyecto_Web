@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlace para importar bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Enlace a archivo css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Enlace para importar fuente de texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+  <title>Inicio</title>
+</head>
+
+<body>
+  <!-- El header es un menú importado íntegramente de bootstrap. Se han añadido los enlaces y modificado algunos botones -->
+  <!-- Este menú se repetirá en todas las páginas -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo"
+            src="img/Initial_Letter_PC_Logo_or_Icon_Design_Vector_Image_Template3-removebg-preview.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ordenadores.html">Ordenadores</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Componentes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="procesadores.html">Procesadores</a></li>
+                <li><a class="dropdown-item" href="placas.html">Placas base</a></li>
+                <li><a class="dropdown-item" href="graficas.html">Gráficas</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item disabled" href="#">Proximamente...</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <!-- Este botón esta desactivado -->
+            <li class="nav-item">
+              <a class="nav-link disabled">Carrito no disponible</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- El contenedor de la página de inicio es un grid de Bootstrap -->
+  <div class="container-fluid">
+    <div class="row flia1" style="text-align: center; align-items: baseline;">
+      <h4>LOS MÁS VENDIDOS</h4>
+      <div class="col columna">
+        <img src="img/graficas/grafica1.png" alt="">
+        <p>Producto más vendido 1</p>
+      </div>
+      <div class="col columna">
+        <img src="img/pc/pc3.png" alt="">
+        <p>Producto más vendido 2</p>
+      </div>
+      <div class="col columna">
+        <img src="img/placas/placa5.png" alt="">
+        <p>Producto más vendido 3</p>
+      </div>
+      <div class="col columna">
+        <img src="img/graficas/grafica3.png" alt="">
+        <p>Producto más vendido 4</p>
+      </div>
+    </div>
+    <!-- Se ha añadido un carrusel de 3 imágenes con texto, también desde Bootstrap -->
+    <h4>DESTACADOS</h4>
+    <div class="row fila2" style="text-align: center;">
+
+      <div class="col carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/setup.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Los mejores Setups</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum eu molestie. Mauris
+                  tellus dui, viverra quis tortor in, cursus gravida tellus.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/montaje.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Operarios profesionales</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/entrega.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Envío rápido y entrega express</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra vel ipsum eu molestie. Mauris
+                  tellus dui, viverra quis tortor in, cursus gravida tellus.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Un video añadido manualmente con una imagen predefinida de portada -->
+    <div class="row fila3" style="text-align: center;">
+      <h4>CONTENIDO SOBRE ACTUALIDAD</h4>
+      <video src="img/¡NVIDIA vs AMD_ La batalla definitiva! ¿Quién hace las mejores gráficas.mp4" controls
+        poster="img/amd-vs-nvidia.jpg"></video>
+    </div>
+  </div>
+  <!-- Footer hecho a mano, con "información legal" y enlaces a redes sociales -->
+  <footer class="footer">
+    <div class="info">
+      <h5>Alfonso Navío Castellano</h5>
+      <p>© 2023 Todos los derechos reservados</p>
+    </div>
+    <div class="media">
+      <a href="https://www.instagram.com/navio13/" target="_blank"><img src="img/media/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com/alfonso.naviocastellano" target="_blank"><img src="img/media/facebook.png"
+          alt=""></a>
+      <a href="https://twitter.com/Navio13" target="_blank"><img src="img/media/gorjeo.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/alfonso-navio-617a3b1b1/" target="_blank"><img src="img/media/linkedin.png"
+          alt=""></a>
+    </div>
+    <div class="legal">
+      <p>AVISO LEGAL</p>
+      <p>POLÍTICA DE PRIVACIDAD</p>
+    </div>
+    <div class="legal">
+      <p>SOPORTE</p>
+      <p>TRABAJA CON NOSOTROS</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

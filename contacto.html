@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace para importar bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Enlace a archivo css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace para importar fuente de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- El header es un menú importado íntegramente de bootstrap. Se han añadido los enlaces y modificado algunos botones -->
+    <!-- Este menú se repetirá en todas las páginas -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo"
+                        src="img/Initial_Letter_PC_Logo_or_Icon_Design_Vector_Image_Template3-removebg-preview.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ordenadores.html">Ordenadores</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Componentes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="procesadores.html">Procesadores</a></li>
+                                <li><a class="dropdown-item" href="placas.html">Placas base</a></li>
+                                <li><a class="dropdown-item" href="graficas.html">Gráficas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled" href="#">Proximamente...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                        <!-- Este botón esta desactivado -->
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Carrito no disponible</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- El grid de la página de contacto es importado de Bootstrap -->
+    <div class="container-fluid c-container" style="text-align: center;">
+        <!-- La primera parte es un formulario simple, pidiendo los datos necesarios, con un cuadro para el mensaje y un botón para su envío -->
+        <div class="row filacontacto">
+            <h1>SERVICIO DE CONTACTO</h1>
+            <form name="formulario">
+                <!-- Datos necesarios-->
+                <div class="row fila">
+                    <div class="col-lg-4 col-sm-6 col-12 columnas">
+                        <input type="text" class="input" required placeholder="Nombre">
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-12 columnas">
+                        <input type="text" class="input" required placeholder="Primer apellido">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <input type="text" class="input" required placeholder="Segundo apellido">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <input type="text" class="input" required placeholder="E-mail">
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <input type="text" class="input" required placeholder="Dirección">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <input type="text" class="input" required placeholder="Teléfono">
+                    </div>
+                </div>
+                <!-- Cuadro de texto para el mensaje -->
+                <div class="row">
+                    <div class="col-12">
+                        <textarea name="Mensaje" cols="50" rows="10"
+                            placeholder="Escriba aquí su mensaje..."></textarea>
+                    </div>
+                </div>
+                <!-- Botón de envío de formulario -->
+                <input type="submit" class="submit">
+            </form>
+        </div>
+        <!-- Mapa con dos direcciones, se cambia entre ellas mediante botones en la parte superior del mismo -->
+        <div class="row filamapa">
+            <h1>UBICACION</h1>
+            <!-- Botones para cada dirección -->
+            <div class="col-6">
+                <button><a
+                        href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5470272562757!2d-3.7874936851662064!3d37.77721811979282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7990ae78871%3A0x363ce35ac95de551!2sIFP%20Rescate%20y%20Formaci%C3%B3n!5e0!3m2!1ses!2ses!4v1675070272442!5m2!1ses!2ses"
+                        target="mapa">
+                        IFP Av. Madrid </a></button>
+            </div>
+            <div class="col-6">
+                <button><a
+                        href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.650989315861!2d-3.7877932851655247!3d37.798218218584196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd794b141d613:0x2d934caa1ed49123!2sIFP%20Rescate!5e0!3m2!1ses!2ses!4v1675070007030!5m2!1ses!2ses"
+                        target="mapa">
+                        IFP Aventura </a></button>
+            </div>
+            <!-- Iframe del mapa -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.650989315861!2d-3.7877932851655247!3d37.798218218584196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd794b141d613%3A0x2d934caa1ed49123!2sIFP%20Rescate!5e0!3m2!1ses!2ses!4v1675070007030!5m2!1ses!2ses"
+                name="mapa" width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- Footer hecho a mano, con "información legal" y enlaces a redes sociales -->
+    <footer class="footer">
+        <div class="info">
+            <h5>Alfonso Navío Castellano</h5>
+            <p>© 2023 Todos los derechos reservados</p>
+        </div>
+        <div class="media">
+            <a href="https://www.instagram.com/navio13/" target="_blank"><img src="img/media/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/alfonso.naviocastellano" target="_blank"><img src="img/media/facebook.png"
+                    alt=""></a>
+            <a href="https://twitter.com/Navio13" target="_blank"><img src="img/media/gorjeo.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/alfonso-navio-617a3b1b1/" target="_blank"><img
+                    src="img/media/linkedin.png" alt=""></a>
+        </div>
+        <div class="legal">
+            <p>AVISO LEGAL</p>
+            <p>POLÍTICA DE PRIVACIDAD</p>
+        </div>
+        <div class="legal">
+            <p>SOPORTE</p>
+            <p>TRABAJA CON NOSOTROS</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

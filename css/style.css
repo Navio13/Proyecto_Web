@@ -1,0 +1,262 @@
+/* GENERAL */
+
+* {
+    font-family: 'Rokkitt', serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #fefadc;
+    color: black;
+}
+
+/* MENU Y HEADER */
+.menu {
+    scroll-behavior: smooth;
+}
+
+#logo {
+    width: 100px;
+    height: 70px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+/* FOOTER */
+
+.footer {
+    color: aliceblue;
+    margin-top: 50px;
+    background-color: #212529;
+    display: grid;
+    grid-template-columns: 25% 50% 12% 13%;
+    grid-template-rows: 100px;
+}
+
+.info {
+    font-size: xx-small;
+    text-align: center;
+    align-self: center;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.media img {
+    height: 50px;
+    width: 50px;
+}
+
+.legal {
+    font-size: small;
+    text-align: center;
+    align-self: center;
+}
+
+/* INDEX */
+
+.fila2 {
+    height: 700px;
+}
+
+.fila1,
+.fila2,
+.fila3 {
+    margin-top: 50px;
+}
+
+h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.columna img {
+    cursor: pointer;
+}
+
+.carrusel {
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 60%;
+    height: 600px;
+}
+
+/* PÁGINAS DE PRODUCTOS */
+
+.titulo {
+    margin: 25px;
+    margin-left: 70px;
+}
+
+.p-container {
+    /* CONTENEDOR GENERAL */
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 400px);
+    margin: 20px auto;
+    grid-gap: 1em;
+}
+
+.filtro {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    align-self: top;
+    border-right: 1px solid grey;
+    justify-self: center;
+}
+
+.contenido {
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    background-color: white;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.contenido img {
+    width: 80%;
+    height: 65% auto;
+}
+
+.contenido button {
+    border-radius: 10%;
+    background-color: lightgreen;
+}
+
+.contenido button img {
+    width: 25px;
+}
+
+/* CONTACTO*/
+
+/* FORMULARIO */
+
+input {
+    animation: shake 0.14s 3;
+}
+
+input:valid {
+    animation: none;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    border: 1px solid aqua;
+    margin: 10px;
+}
+
+.submit {
+    color: black;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+.submit:hover {
+    color: aqua;
+    border: 1px solid aqua;
+    background-color: black;
+}
+
+/* 
+    ANIMACION AL BORRAR EL CONTENIDO OBLIGATORIO
+    Fuente: @frontendjoe (Instagram) 
+*/
+@keyframes shake {
+
+    0%,
+    100% {
+        translate: 0;
+    }
+
+    25% {
+        translate: 8px 0;
+    }
+
+    75% {
+        translate: -8px 0;
+    }
+}
+
+/* UBICACION */
+
+.filamapa {
+    margin-top: 50px;
+}
+
+button {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+iframe {
+    border-radius: 5%;
+    border: 1000px solid black;
+}
+
+/*BREAKPOINTS PARA PÁGINAS DE PRODUCTOS*/
+
+@media screen and (max-width: 960px) {
+    .p-container {
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, 33%);
+        grid-row: 75px 75px;
+    }
+
+    .media {
+        grid-column: 1/4;
+        grid-row: 2/4;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .p-container {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .filtro {
+        grid-row: 1 / 2;
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, 33%);
+        grid-row: 75px 75px;
+    }
+
+    .media {
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+}
